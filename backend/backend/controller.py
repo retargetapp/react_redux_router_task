@@ -14,7 +14,7 @@ class Controller(View):
         return JsonResponse({"data": request.session["events"]})
 
     def post(self, request):
-        content = request.body.decode(request.encoding)
+        content = request.body.decode('utf-8')
         try:
             new_event = json.loads(content)
         except Exception:
