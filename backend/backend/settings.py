@@ -27,7 +27,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-ROOT_URLCONF = 'backend.controller'
+ROOT_URLCONF = 'backend.urls'
 
 # Database for sessions only
 
